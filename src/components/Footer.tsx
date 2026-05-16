@@ -57,6 +57,18 @@ export function Footer() {
                   <path d="M8 6l-6 6 6 6" />
                 </svg>
               </a>
+              <a
+                href="https://github.com/gameinstall2025/liteforgedex"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub — Source code & bug bounty"
+                title="GitHub — Source"
+                className="w-9 h-9 rounded-full border border-line2 flex items-center justify-center text-dim hover:text-ink hover:border-ember/50 bg-panel2/40 transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.02 3.25 9.27 7.76 10.77.57.1.78-.25.78-.55v-1.94c-3.16.69-3.82-1.52-3.82-1.52-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.44.11-3 0 0 .96-.31 3.15 1.17a10.97 10.97 0 0 1 5.74 0c2.19-1.48 3.14-1.17 3.14-1.17.63 1.56.24 2.71.12 3 .73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.79.55 4.51-1.5 7.75-5.76 7.75-10.77C23.33 5.56 18.27.5 12 .5Z" />
+                </svg>
+              </a>
               <span
                 aria-label="Telegram — coming soon"
                 title="Telegram — Coming Soon"
@@ -154,14 +166,16 @@ export function Footer() {
                 </span>
               </li>
               <li>
-                <span className="font-mono text-[13px] text-dim/40 cursor-not-allowed inline-flex items-center gap-1.5">
+                <a
+                  href="mailto:gameinstall2025@gmail.com"
+                  className="font-mono text-[13px] text-dim hover:text-ember transition-colors inline-flex items-center gap-1.5"
+                >
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  Email{" "}
-                  <span className="text-[11px]">(Soon)</span>
-                </span>
+                  Email
+                </a>
               </li>
               <li>
                 <a
