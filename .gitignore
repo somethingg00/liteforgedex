@@ -1,0 +1,18 @@
+node_modules/
+.next/
+.env
+.env.local
+.env*.local
+# Secrets / sensitive
+config.json
+*.key
+*.pem
+.yarn/cache
+.yarn/install-state.gz
+.yarn/build-state.yml
+.pnp.*
+*.tsbuildinfo
+next-env.d.ts
+# Cloudflare Pages build artifacts
+.vercel/
+.wrangler/
