@@ -12,6 +12,21 @@ const nextConfig = {
     });
     return config;
   },
+  // Canonicalize traffic onto the custom domain. Anyone who lands on the
+  // default `*.pages.dev` URL is permanently redirected to liteforgedex.com
+  // so there is one canonical origin for SEO, sessions, and wallet flows.
+  // Preview deployment URLs (commit-hash.liteforgedex.pages.dev) are NOT
+  // matched and remain reachable for testing.
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "liteforgedex.pages.dev" }],
+        destination: "https://liteforgedex.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   // Defense-in-depth security headers applied to every response.
   // These complement (not replace) the security guarantees enforced by
   // wagmi/viem at the protocol layer.
