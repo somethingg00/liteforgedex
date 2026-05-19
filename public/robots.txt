@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /profile
+
+Sitemap: https://liteforgedex.com/sitemap.xml

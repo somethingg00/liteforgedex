@@ -8,28 +8,88 @@ import { Footer } from "@/components/Footer";
 const SITE_URL = "https://liteforgedex.com";
 const SITE_NAME = "LiteForge DEX";
 const SITE_DESCRIPTION =
-  "LiteForge DEX — swap, bridge, stake and forge tokens on LitVM LiteForge, the trustless EVM rollup secured by Litecoin.";
+  "Trade zkLTC, bridge LTC via BitcoinOS Grail, stake $LITVM on LiteForge DEX — the flagship DEX on LitVM, Litecoin's first trustless EVM rollup endorsed by the Litecoin Foundation. Hard Money Web3 built on Arbitrum Orbit.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — LitVM Testnet`,
+    default: `${SITE_NAME} — LitVM Testnet · Litecoin DeFi, Bridge, Stake & Swap`,
     template: `%s · ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   keywords: [
+    // Brand
     "LiteForge",
     "LiteForge DEX",
+    "LitVM LiteForge",
+    // Network — LitVM
     "LitVM",
+    "LitVM DEX",
+    "LitVM Testnet",
+    "LitVM rollup",
+    "LitVM bridge",
+    "LitVM stake",
+    "Litecoin Virtual Machine",
+    // Tokens
+    "$LITVM",
+    "LITVM token",
+    "LITVM staking",
+    "$zkLTC",
     "zkLTC",
+    "zkLTC swap",
+    "zkLTC bridge",
+    "zkLTC gas token",
+    // Litecoin DeFi positioning
     "Litecoin DeFi",
+    "Litecoin DEX",
     "Litecoin rollup",
-    "EVM rollup",
+    "Litecoin L2",
+    "Litecoin EVM",
+    "Litecoin ZK rollup",
+    "Litecoin smart contracts",
+    "Litecoin staking",
+    "Litecoin yield",
+    "Litecoin DAO",
+    "Litecoin Foundation",
+    "Hard Money Web3",
+    // Tech stack
+    "Arbitrum Orbit",
+    "Arbitrum Nitro",
     "Caldera",
+    "Succinct zkVM",
+    "SP1 zkVM",
+    "Espresso sequencer",
+    "BitcoinOS",
+    "BitcoinOS Grail",
+    "Grail Bridge",
+    "BitSNARK",
+    // Concepts
+    "trustless bridge",
+    "non-custodial bridge",
+    "ZK rollup",
+    "EVM rollup",
+    "ZK-SNARK",
+    "validity proofs",
+    "sequencer fees",
+    "sequencer fee revenue",
+    "1:1 LTC backing",
+    // Litecoin-native assets
+    "Litecoin Ordinals",
+    "Litecoin Runes",
+    "LTC-20",
+    "BitcoinOS Charms",
+    // Product features
     "DEX",
+    "decentralized exchange",
     "bridge",
     "stake",
+    "liquidity",
+    "airdrop",
+    // Ecosystem apps
+    "MidasHand",
+    "Lester Labs",
+    "OnmiFun",
   ],
   alternates: {
     canonical: "/",
@@ -47,7 +107,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "/og.png",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} — DeFi forged on Litecoin's bedrock`,
@@ -60,7 +120,7 @@ export const metadata: Metadata = {
     creator: "@ssomethingg00",
     title: `${SITE_NAME} — LitVM Testnet`,
     description: SITE_DESCRIPTION,
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,
