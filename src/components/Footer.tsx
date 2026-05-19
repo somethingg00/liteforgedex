@@ -145,7 +145,9 @@ export function Footer() {
             <ul className="space-y-3.5">
               <li>
                 <a
-                  href="#"
+                  href="https://docs.litvm.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-mono text-[13px] text-dim hover:text-ember transition-colors inline-flex items-center gap-1.5"
                 >
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
@@ -154,6 +156,7 @@ export function Footer() {
                     <line x1="12" y1="17" x2="12.01" y2="17" />
                   </svg>
                   Help Center
+                  <span className="text-[10px]">↗</span>
                 </a>
               </li>
               <li>
@@ -167,23 +170,14 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:gameinstall2025@gmail.com"
-                  className="font-mono text-[13px] text-dim hover:text-ember transition-colors inline-flex items-center gap-1.5"
-                >
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                  Email
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="https://liteforge.explorer.caldera.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-mono text-[13px] text-dim hover:text-ember transition-colors inline-flex items-center gap-1.5"
                 >
                   <span className="w-2 h-2 rounded-full bg-ember pulse-dot shrink-0" />
                   Status
+                  <span className="text-[10px]">↗</span>
                 </a>
               </li>
             </ul>

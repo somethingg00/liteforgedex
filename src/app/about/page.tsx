@@ -114,6 +114,35 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Why */}
+      <section className="space-y-5">
+        <h2 className="font-mono text-[11px] tracking-[0.25em] text-dim">▸ WHY LITEFORGE</h2>
+        <div className="space-y-4 max-w-3xl">
+          <p className="text-dim2 text-[14px] leading-relaxed">
+            Litecoin has secured value for over a decade with one of the most battle-tested
+            proof-of-work networks ever shipped — yet its expressive power has stayed frozen
+            at the script level. Meanwhile the EVM world keeps reinventing security on top
+            of validator sets that are years old. LiteForge bridges that gap: a full EVM
+            execution layer that <span className="text-ember">settles into Litecoin&apos;s
+            mining economy</span>, not a parallel committee.
+          </p>
+          <p className="text-dim2 text-[14px] leading-relaxed">
+            Every swap, every bridge, every token deploy on this DEX runs on LitVM —
+            an Arbitrum Orbit rollup with sub-second blocks. Native gas is zkLTC, which
+            is real Litecoin held 1:1 by the BitcoinOS Grail Bridge. There are no
+            custodial wrappers, no synthetic IOUs, and no governance switch that can
+            mint zkLTC out of thin air. If you can bridge in, you can bridge out.
+          </p>
+          <p className="text-dim2 text-[14px] leading-relaxed">
+            The DEX itself is intentionally minimal: an on-chain price oracle, a single
+            swap router, a forge for permissionless ERC20 issuance, and a staking module
+            that pays out from <span className="text-ember">real sequencer fees</span> —
+            never from inflationary emissions. The protocol is the product. No hidden
+            treasury, no team unlock cliffs you have to track on a third-party dashboard.
+          </p>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="space-y-4">
         <h2 className="font-mono text-[11px] tracking-[0.25em] text-dim">▸ WHAT YOU CAN DO</h2>
@@ -151,6 +180,48 @@ export default function AboutPage() {
         </Panel>
       </section>
 
+      {/* FAQ */}
+      <section className="space-y-4">
+        <h2 className="font-mono text-[11px] tracking-[0.25em] text-dim">▸ FAQ</h2>
+        <div className="space-y-3">
+          {[
+            {
+              q: "What is zkLTC?",
+              a: "zkLTC is the native gas token on LitVM. It is 1:1 backed by real Litecoin held by the BitcoinOS Grail Bridge contracts. Every zkLTC in circulation corresponds to exactly one LTC locked on Litecoin L1, and you can bridge back at any time.",
+            },
+            {
+              q: "Is LiteForge custodial?",
+              a: "No. The bridge is non-custodial and trust-minimized — no multisig of named individuals controls user funds. The DEX contracts are immutable swap and staking modules deployed on LitVM; LiteForge does not hold user deposits.",
+            },
+            {
+              q: "How does staking pay rewards?",
+              a: "Stakers lock LITVM tokens and receive a pro-rata share of zkLTC fee revenue collected by the sequencer. Rewards are denominated in zkLTC — i.e. real Litecoin — not in inflationary LITVM emissions.",
+            },
+            {
+              q: "Can anyone list a token?",
+              a: "Yes. The Token Forge lets you deploy a capped, burnable, pausable ERC20 in a single transaction. Once deployed, the token can be paired against zkLTC on the swap router with an oracle or manual price feed.",
+            },
+            {
+              q: "What is the chain ID and how do I add the network?",
+              a: "LiteForge runs on chain ID 4441. The RPC, explorer, and one-click \"Add Network\" button are available on the landing page and in the docs at docs.litvm.com.",
+            },
+            {
+              q: "Is the source code open?",
+              a: "Yes. The frontend and contract code are open-source on GitHub under the somethingg00/liteforgedex repository. Anyone can audit, fork, or integrate against the deployed contracts.",
+            },
+          ].map((item) => (
+            <Panel key={item.q}>
+              <div className="p-5 space-y-2">
+                <div className="font-mono font-bold text-ink tracking-wide text-[13px]">
+                  {item.q}
+                </div>
+                <p className="font-mono text-[12px] text-dim2 leading-relaxed">{item.a}</p>
+              </div>
+            </Panel>
+          ))}
+        </div>
+      </section>
+
       {/* Links */}
       <section className="space-y-4">
         <h2 className="font-mono text-[11px] tracking-[0.25em] text-dim">▸ LINKS</h2>
@@ -161,7 +232,6 @@ export default function AboutPage() {
             { label: "GitHub — Source", href: "https://github.com/somethingg00/liteforgedex", external: true, soon: false },
             { label: "X / Twitter — @LitecoinVM", href: "https://twitter.com/LitecoinVM", external: true, soon: false },
             { label: "Developer — @ssomethingg00", href: "https://x.com/ssomethingg00", external: true, soon: false },
-            { label: "Email — gameinstall2025@gmail.com", href: "mailto:gameinstall2025@gmail.com", external: false, soon: false },
             { label: "Telegram (Soon)", href: "#", external: false, soon: true },
           ].map((link) =>
             link.soon ? (
